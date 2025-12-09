@@ -1,7 +1,7 @@
 # React + Vite: E-Commerce App 🛒
 
 ## Live Demo
-👉 **https://reactproject-8w0hpgapc-shreya-lakheras-projects.vercel.app/**
+👉 **https://reactproject-j8v25e4ux-shreya-lakheras-projects.vercel.app/**
 
 ## What this app does?
 - See all products
