@@ -1,0 +1,99 @@
+.cart-container {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.cart-icon {
+  font-size: 28px;
+  color: #ece4e4;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  background-color: rgb(219, 15, 15);
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  padding: 2px 6px;
+  border-radius: 60%;
+}
+
+
+
+
+
+
+
+
+
+
+/* Full Page Centering */
+.empty-cart-container {
+    width: 100%;
+    min-height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* White Card */
+.empty-cart-box {
+    text-align: center;
+    background: #ffffff;
+    padding: 40px 30px;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 420px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.12);
+
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+/* Image */
+.empty-cart-img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+/* Title */
+.empty-cart-box h2 {
+    font-size: 26px;
+    font-weight: 700;
+    color: #323232;
+}
+
+/* Subtext */
+.empty-cart-box p {
+    margin-top: 8px;
+    font-size: 16px;
+    color: #555;
+}
+
+/* Shop Button */
+.shop-btn {
+    margin-top: 20px;
+    padding: 10px 22px;
+    font-size: 16px;
+    background: #4a90e2;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+
+    transition: 0.25s ease;
+}
+
+.shop-btn:hover {
+    background: #3a7dd0;
+    transform: scale(1.05);
+}
+
+/* Smooth animation */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(15px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+

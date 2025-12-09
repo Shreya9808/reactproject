@@ -1,0 +1,42 @@
+/* Make navbar stay fixed at top */
+.navbar {
+  position: fixed;        /* Stays fixed on screen */
+  top: 0;                 /* Stick to top */
+  left: 0;
+  width: 100%;            /* Full width */
+  z-index: 1000;          /* Ensure it stays above other content */
+  
+  background-color: rgb(139, 19, 160);
+  padding: 15px 30px;
+  display: flex;
+  align-items: center;
+  
+
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow */
+}
+
+/* Prevent content from hiding under navbar */
+body {
+  padding-top: 80px;     /* Adjust based on navbar height */
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #f9f9f9;
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  color: #6bb3ff;
+}
