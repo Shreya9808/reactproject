@@ -14,3 +14,4 @@
 ## How to run on your computer?
 ```bash
 npm install
+npm run dev
