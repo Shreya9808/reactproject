@@ -142,7 +142,10 @@ import { removeitem,clearitem } from '../redux/slice';
         <div className='cart-footer'>
             Total : ${cartitems.reduce((acc, item) => item.quantity ? acc +item.quantity*item.price : acc+item.price, 0).toFixed(2)}
         </div>
+        {
+        cartitems.length>0 ?
         <button className='btn btn-sm' style={{width:"130px"}} onClick={handleplaceorder}>Place Order</button>
+        :null}
         
         </div>
         
