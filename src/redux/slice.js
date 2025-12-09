@@ -26,12 +26,19 @@ const addtocart= createSlice({
            
             
 
-         }
+         },
+        updateQuantity:(state,action)=>{
+            const item = state.items.find(x => x.id === action.payload.id);
+            if(item){
+                item.quantity = action.payload.quantity;
+                localStorage.setItem('cart',JSON.stringify(state.items));
+            }
+        }
        
 
     }
 })
 
-export const{additem,removeitem,clearitem}=addtocart.actions
+export const{additem,removeitem,clearitem,updateQuantity}=addtocart.actions
 export default addtocart.reducer
 
